@@ -2,7 +2,7 @@
 <addon id="repository.chrisxf" name="chrisxf Repository" version="999.999.9" provider-name="chrisxf">
     <extension point="xbmc.addon.repository" name="chrisxf Repository">
         <info compressed="false">https://raw.githubusercontent.com/chrisxf/kodi-repository/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/covenantkodi/repository.colossus/master/addons.xml.md5</checksum>
+        <checksum>https://raw.githubusercontent.com/chrisxf/kodi-repository/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/chrisxf/kodi-repository/master/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
