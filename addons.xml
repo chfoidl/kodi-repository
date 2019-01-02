@@ -1,0 +1,21 @@
+<addons>
+    <addon id="script.module.chrome-tv"
+        name="Chrome TV"
+        version="0.1.0"
+        author="chrisxf">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="browser.chrome" version="9.0"/>
+    </requires>
+    <extension point="xbmc.addon.metadata">
+        <summary>Chrome TV provides files for my other addons such as Netflix-TV and YouTube-TV</summary>
+        <description>Chrome TV</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <news></news>
+        <assets>
+        <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+    </addon>
+</addons>
