@@ -1,0 +1,2 @@
+update:
+	python sync.py

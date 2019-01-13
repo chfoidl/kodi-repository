@@ -1,0 +1,9 @@
+[
+    {
+        "id": "script.module.chrome-pilot",
+        "git": "https://github.com/chrisxf/kodi-chrome-tv.git"
+    }, {
+        "id": "script.video.netflix-tv",
+        "git": "https://github.com/chrisxf/kodi-netflix-tv.git"
+    }
+]
