@@ -30,6 +30,7 @@ def updateAddons(addons):
         
         shutil.copy("tmp/addon.xml", id)
         shutil.copy("tmp/resources/icon.png", id)
+        shutil.copy("tmp/resources/fanart.png", id)
 
         packages = os.listdir("tmp/dist")
         for package in packages:
