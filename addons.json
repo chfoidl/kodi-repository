@@ -5,5 +5,8 @@
     }, {
         "id": "script.video.netflix-tv",
         "git": "https://github.com/chrisxf/kodi-netflix-tv.git"
+    }, {
+        "id": "script.video.youtube-tv",
+        "git": "https://github.com/chrisxf/kodi-youtube-tv.git"
     }
 ]

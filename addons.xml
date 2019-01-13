@@ -42,4 +42,21 @@
       <fanart>resources/fanart.png</fanart>
     </assets>
   </extension>
+</addon><addon id="script.video.youtube-tv" name="YouTube TV" provider-name="chrisxf" version="0.1.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.chrome-pilot" version="0.1.1" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.script">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>YouTube TV</summary>
+    <description>YouTube TV</description>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
+    </assets>
+  </extension>
 </addon></addons>
