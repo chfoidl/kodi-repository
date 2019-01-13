@@ -17,6 +17,17 @@ def parseAddonList(path):
 
     return data
 
+def copyAddonResources(id, xmlElement):
+    if xmlElement is not None:
+        dir = os.path.dirname(xmlElement.text)
+        path = os.path.join(id, dir)
+
+        if not os.path.isdir(path):
+            os.mkdir(path)
+
+        shutil.copy(os.path.join("tmp", xmlElement.text), os.path.join(id, xmlElement.text))
+
+
 def updateAddons(addons):
     for addon in addons:
         id = addon["id"]
@@ -29,8 +40,15 @@ def updateAddons(addons):
         forceMkDir(id)
         
         shutil.copy("tmp/addon.xml", id)
-        shutil.copy("tmp/resources/icon.png", id)
-        shutil.copy("tmp/resources/fanart.png", id)
+
+        a = ET.parse("tmp/addon.xml").getroot()
+        r = a.find('extension[@point="xbmc.addon.metadata"]/assets')
+        if r is not None:
+            icon = r.find("icon")
+            fanart = r.find("fanart")
+
+            copyAddonResources(id, icon)
+            copyAddonResources(id, fanart)
 
         packages = os.listdir("tmp/dist")
         for package in packages:
