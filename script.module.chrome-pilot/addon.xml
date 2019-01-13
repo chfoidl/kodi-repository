@@ -12,6 +12,7 @@
     <news></news>
     <assets>
       <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
     </assets>
   </extension>
 </addon>
