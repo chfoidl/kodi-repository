@@ -1,33 +1,44 @@
-<addons>
-    <addon id="repository.chrisxf" name="chrisxf Repository" version="1.0.0" provider-name="chrisxf">
-        <extension point="xbmc.addon.repository" name="chrisxf Repository">
-            <info compressed="false">https://raw.githubusercontent.com/chrisxf/kodi-repository/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/chrisxf/kodi-repository/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/chrisxf/kodi-repository/master/</datadir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Home of all chrisxf Kodi addons</summary>
-            <description></description>
-            <platform>all</platform>
-        </extension>
-    </addon>
-    <addon id="script.module.chrome-tv"
-        name="Chrome TV"
-        version="0.1.0"
-        author="chrisxf">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="browser.chrome" version="9.0"/>
-    </requires>
-    <extension point="xbmc.addon.metadata">
-        <summary>Chrome TV provides files for my other addons such as Netflix-TV and YouTube-TV</summary>
-        <description>Chrome TV</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <news></news>
-        <assets>
-        <icon>resources/icon.png</icon>
-        </assets>
+<addons><addon id="repository.chrisxf" name="chrisxf Repository" provider-name="chrisxf" version="1.0.0">
+    <extension name="chrisxf Repository" point="xbmc.addon.repository">
+        <info compressed="false">https://raw.githubusercontent.com/chrisxf/kodi-repository/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/chrisxf/kodi-repository/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/chrisxf/kodi-repository/master/</datadir>
     </extension>
-    </addon>
-</addons>
+    <extension point="xbmc.addon.metadata">
+        <summary>Home of all chrisxf Kodi addons</summary>
+        <description />
+        <platform>all</platform>
+    </extension>
+</addon><addon id="script.module.chrome-pilot" name="Chrome Pilot" provider-name="chrisxf" version="0.1.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Chrome Pilot provides files for other addons</summary>
+    <description>Chrome Pilot</description>
+    <disclaimer />
+    <platform>all</platform>
+    <news />
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon><addon id="script.video.netflix-tv" name="Netflix TV" provider-name="chrisxf" version="0.1.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.chrome-pilot" version="0.1.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.script">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Netflix TV</summary>
+    <description>Netflix TV</description>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
+    </assets>
+  </extension>
+</addon></addons>
