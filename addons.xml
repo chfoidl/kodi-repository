@@ -9,7 +9,7 @@
         <description />
         <platform>all</platform>
     </extension>
-</addon><addon id="script.module.chrome-pilot" name="Chrome Pilot" provider-name="chrisxf" version="0.1.0">
+</addon><addon id="script.module.chrome-pilot" name="Chrome Pilot" provider-name="chrisxf" version="0.1.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
