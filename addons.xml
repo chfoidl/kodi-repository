@@ -25,7 +25,7 @@
       <fanart>resources/fanart.png</fanart>
     </assets>
   </extension>
-</addon><addon id="script.video.netflix-tv" name="Netflix TV" provider-name="chrisxf" version="0.1.1">
+</addon><addon id="script.video.netflix-tv" name="Netflix TV" provider-name="chrisxf" version="0.1.2">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.chrome-pilot" version="0.1.0" />
